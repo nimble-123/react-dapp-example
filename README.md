@@ -1,15 +1,32 @@
 # Steps to reproduce
 
-- npx create-react-app react-dapp-example
-- npx hardhat
+- `npx create-react-app react-dapp-example`
+- `npx hardhat`
 - modify hardhat config
-- npx hardhat compile
-- npx hardhat node
+- `npx hardhat compile`
+- `npx hardhat node`
 - open new terminal
-- npx hardhat run scripts/deploy.js --network localhost
+- `npx hardhat run scripts/deploy.js --network localhost`
 - connect metamask to local test network
-- yarn start
-- modify App.js
+- `yarn start`
+- modify `App.js`
+
+## Own token example
+
+- create `Token.sol` in contracts
+- update `deploy.js`
+- update `App.js`
+- `npx hardhat run scripts/deploy.js --network localhost`
+- `yarn start`
+
+## Own ERC20 compliant token example
+
+- `yarn add @openzeppelin/contracts`
+- create `NimbleToken.sol`
+- update `deploy.js`
+- update `App.js`
+- `npx hardhat run scripts/deploy.js --network localhost`
+- `yarn start`
 
 # Basic Sample Hardhat Project
 
